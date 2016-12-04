@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="Trasano Admin Dashboard">
+    <meta name="author" content="Trasano Team">
+
+    <title>Trasano-Admin</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <!-- <link href="dist/css/dashboard.css" rel="stylesheet">  -->
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- Custom styles for this template -->
+    <link href="../dist/css/trasano.css" rel="stylesheet">   
+
+    <!-- JQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+    <!-- Custom library -->
+    <script type="text/javascript" src="../js/trasano-common.js"></script>
+    <script type="text/javascript" src="../js/trasano-admin.js"></script>
+    <script type="text/javascript" src="../resource/config.js"></script>
+  </head>
+
+  <body onLoad="javascript:getAdminCancel();">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-static-top" role="navigation"> 
+        <div class="container-fluid">
+            <a class="navbar-brand pull-right" href="#">
+                  <span class="glyphicon glyphicon-menu-hamburger"></span> 
+            </a>  
+            <a class="navbar-brand" href="#"><img style="display: inline-block; height: 40px; margin-top: -10px" src="../img/salud-madrid-logo.png" alt="TraSANO"></a>       
+        </div> 
+    </nav> 
+
+    <div class="container-fluid" id="navigationTabs"></div>
+
+    <br>
+
+    <div class="container-fluid" id="countersDiv"></div>
+
+    <br>
+
+    <div class="container" id="chartsDiv"></div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="trasanoMODAL" tabindex="-1" role="dialog" aria-labelledby="trasanoMODALLabel">
+        <div class="modal-dialog modal-sm" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div id="trasanoModalHeader">
+                    </div>
+                </div>
+                <div class="modal-body">
+                    <div id="trasanoModalBody"></div>
+                </div>
+                <div class="modal-footer">
+                    <div id="trasanoModalFooter"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /modal -->
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted pull-right">&copy; 2016 Trasano.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core
+    ================================================== -->
+    <script src="../dist/js/bootstrap.min.js"></script>
+    <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
+    <script src="../assets/js/vendor/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
