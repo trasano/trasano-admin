@@ -1,5 +1,5 @@
 # Proyecto Fin de Carrera
 Aplicación móvil para el Transporte Sanitario no Urgente (**Trasano**).
 
-## Trasano-Little
+## Trasano-Admin
 Aplicación web para los administradores del Sistema Trasano.
